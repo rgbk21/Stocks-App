@@ -1,0 +1,11 @@
+<div class="mdl-grid">
+<!--  Use ngIf to show "loading" message until the stocks have loaded-->
+  <div class="mdl-cell mdl-cell--12-col" *ngIf="!stocks" style="text-align:center;">
+    Loading...
+  </div>
+<!--  Use ngFor to loop over each stock-->
+  <div class="mdl-cell mdl-cell--3-col" *ngFor="let stock of stocks">
+<!--    Instantiate a app-summary component and pass that stock data-->
+    <app-summary [stock]="stock"></app-summary>
+  </div>
+</div>

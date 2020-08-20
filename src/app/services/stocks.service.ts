@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
 // Declare a stock array and API variables
-let stocks : Array<string> = ['AAPL', 'GOOG', 'FB', 'AMZN', 'TWTR'];
+let stocks: Array<string> = ['AAPL', 'GOOG', 'FB', 'AMZN', 'TWTR'];
 let service: string = 'https://angular2-in-action-api.herokuapp.com';
 
 // Define and export the TypeScript interface for the stock object
