@@ -10,18 +10,21 @@ import { StocksService } from './services/stocks.service';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SummaryComponent } from './components/summary/summary.component';
-import { DashboardComponent } from './components/dashboard/dashboard.component'; // Imports the App Component
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { ManageComponent } from './components/manage/manage.component'; // Imports the App Component
+import { FormsModule } from '@angular/forms';
 
 @NgModule({ // Uses the NgModule annotation to define a module by passing an object
   declarations: [ // Declarations are to list any components and directives used in the app
-    AppComponent, SummaryComponent, DashboardComponent
+    AppComponent, SummaryComponent, DashboardComponent, ManageComponent
   ],
   // The import statements on line 7,8 will import the Stocks service and HttpClientModule into the file,
   // but we need to register the HttpClientModule with the application.
   imports: [ // Imports are other modules that are used in the app
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   // we need to register the new StocksService with the providers property to
   // inform Angular that it should be made available for the module to use
