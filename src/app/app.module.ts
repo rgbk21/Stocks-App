@@ -8,11 +8,12 @@ import { HttpClientModule } from '@angular/common/http';
 import { StocksService } from './services/stocks.service';
 
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component'; // Imports the App Component
+import { AppComponent } from './app.component';
+import { SummaryComponent } from './components/summary/summary.component'; // Imports the App Component
 
 @NgModule({ // Uses the NgModule annotation to define a module by passing an object
   declarations: [ // Declarations are to list any components and directives used in the app
-    AppComponent
+    AppComponent, SummaryComponent
   ],
   // The import statements on line 7,8 will import the Stocks service and HttpClientModule into the file,
   // but we need to register the HttpClientModule with the application.
