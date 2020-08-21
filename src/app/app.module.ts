@@ -13,6 +13,7 @@ import { SummaryComponent } from './components/summary/summary.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { ManageComponent } from './components/manage/manage.component'; // Imports the App Component
 import { FormsModule } from '@angular/forms';
+import { AppRoutes } from './app.routes';
 
 @NgModule({ // Uses the NgModule annotation to define a module by passing an object
   declarations: [ // Declarations are to list any components and directives used in the app
@@ -24,7 +25,8 @@ import { FormsModule } from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    AppRoutes
   ],
   // we need to register the new StocksService with the providers property to
   // inform Angular that it should be made available for the module to use
